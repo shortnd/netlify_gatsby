@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
-    <form method="post" netifly-form="true" name="form-test" action="/success">
+    <form method="post" data-netlify="true" name="form-test" action="/success">
       <label htmlFor="firstName">
         First Name
         <input type="text" name="firstName" id="firstName" placeholder="First Name" required/>
