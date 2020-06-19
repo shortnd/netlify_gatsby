@@ -17,7 +17,7 @@ export default function Contact() {
     return (
         <Layout>
             <h2>Contact</h2>
-            <form data-netlify="true" name="contact">
+            <form method="POST" data-netlify="true" name="contact">
                 <input type="hidden" name="form-name" name="contact" />
                 <label htmlFor="email">Email</label>
                 <input type="email" name="email" id="email" {...formik.getFieldProps('email')} required />
