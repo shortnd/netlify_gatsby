@@ -10,8 +10,9 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Hi people</h1>
     <form method="post" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" name="form-test" action="/success">
+      <input type="hidden" name="form-name" value="contact" />
         <p class="hidden">
-          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          <label>Don’t fill this out if you're human: <input name="bot-field" type="hidden" /></label>
         </p>
       <label htmlFor="firstName">
         First Name
