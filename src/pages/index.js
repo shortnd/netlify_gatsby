@@ -9,13 +9,15 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <form method="post" netifly-form="true" name="form-test" action="/success">
+      <label htmlFor="firstName">
+        First Name
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" required/>
+      </label>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </Layout>
 )
 
