@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import SignUpForm from '../components/SignUpForm'
 
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
@@ -17,17 +18,7 @@ export default function Contact() {
     return (
         <Layout>
             <h2>Contact</h2>
-            <form method="POST" data-netlify="true" name="contact">
-                <input type="hidden" name="form-name" name="contact" />
-                <label htmlFor="email">Email</label>
-                <input type="email" name="email" id="email" {...formik.getFieldProps('email')} required />
-                {(formik.touched.email && formik.errors.email) ? (
-                    <>
-                        {formik.errors.email}
-                    </>
-                ) : null}
-                <button type="submit" disabled={!formik.isValid}>submit</button>
-            </form>
+            <SignUpForm />
         </Layout>
     )
 }
